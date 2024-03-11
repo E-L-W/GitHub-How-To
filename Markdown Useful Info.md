@@ -254,6 +254,25 @@ To change the colour of a block of text, the `<div>` tag could be used.
 
 <div style="color:teal">Here is my text in teal.</div>
 
+##### Changing Plain Text Colour in GitHub Web .md files
+
+Using LATEX code in Markdown for GitHub Web.
+
+${\color{red}Red}$
+
+```
+${\color{red}Red}$
+# The single $ for left-alignment and $$CODE$$ for central
+```
+
+Alternative:
+
+${\textsf{\color{lightgreen}Green}}$
+
+```
+${\textsf{\color{lightgreen}Green}}$
+```
+
 ### Change Font Family of Section of Text
 
 The follow table contains "web safe fonts" for CSS and HTML.
