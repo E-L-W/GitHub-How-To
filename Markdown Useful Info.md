@@ -26,6 +26,15 @@ After the backticks, type the language name:
 ```python ... ``` for example.
 ```
 
+To escape backticks in your code (have them appear and not intefere with the rest of your .md doc), use double backticks.
+
+`` escape some ` backticks here ``
+
+The above is achieved using:
+```markdown
+``escape some ` backticks here``
+```
+
 #### Using HTML Syntax
 
 For inline code insert your code between `<code>` and `</code>` - this is for one line of code or a single phrase.
@@ -224,14 +233,26 @@ HTML tables are created with the following tags:
 
 ## HTML `<span>` tag
 
+#### Quick Note/Update
+
+GitHub webpage does not seem to handle the `<span>` tag well. Will try the `<div>` tag instead.
+
+#### HTML `<span>` tag
+
 The HTML span tag is used to edit or modify a specific the section within the span tags. In the context of Markdown text, it can be used with `style="..."` the font colour, family, size and other attributes can be modified.
+
+## HTML `style=" "`
 
 ### Change Colour of Section of Text
 
-Write anything here then <span style="color:crimson">colour specific section</span> then back to normal. This is achieved with the use of HTML tag `<span>` and specifying the `style` of the text:
+GitHub web does not seem to like the use of span for changing inline text, however for the sake of IDE users who can test this - this is normal coloured text and <span style="color:crimson">this is a colour specific section</span> then back to normal. This is achieved with the use of HTML tag `<span>` and specifying the `style` of the text:
 ```html
 <span style="color:crimson">colour specific section</span>
 ```
+
+To change the colour of a block of text, the `<div>` tag could be used.
+
+<div style="color:teal">Here is my text in teal.</div>
 
 ### Change Font Family of Section of Text
 
