@@ -1,13 +1,15 @@
 ## Notes on Markdown and HTML
 
-Markdown itself is in some ways limited (as a language) however, because inline HTML works with markdown on GitHub, the use of HTML tags and other HTML syntax, expands the capabilities of markdown greatly.
+Markdown itself is in some ways limited (as a language) however, because some inline HTML works with markdown on GitHub, the use of HTML tags and other HTML syntax, expands the capabilities of markdown.
 
 Therefore, the following hints will use a mix of HTML and markup syntax.
+
+That said, GitHub Web does not support a lot of HTML tags or syntax, so bear that in mind when creating .md files for display on GitHub web. 
 
 **NOTE:**
 It is important to note that within inline HTML syntax, I have sometimes had trouble using markup language when editing .md files on GitHub web - though this has not always been the case. Sometimes, if I have defined a paragraph using `<p> paragraph here </p>` tags, I have not been able to use markup syntax within the `<p>` paragraph tags `</p>`.
 
-Using an IDE might prevent these problems, as I have yet to come across these issues on PyCharm - likely other IDEs also "patch" these issues.
+IDEs will display the HTML code with no problems, however this does not mean that it will display in GitHub Web. This document will therefore occasionally be updated with unfinished segments for testing GitHub's markdown.
 
 ## Code Blocks
 
@@ -26,7 +28,7 @@ After the backticks, type the language name:
 ```python ... ``` for example.
 ```
 
-To escape backticks in your code (have them appear and not intefere with the rest of your .md doc), use double backticks.
+To escape backticks in your code (have them appear and not interfere with the rest of your .md doc), use double backticks.
 
 `` escape some ` backticks here ``
 
@@ -254,9 +256,9 @@ To change the colour of a block of text, the `<div>` tag could be used.
 
 <div style="color:teal">Here is my text in teal.</div>
 
-#### Changing Plain Text Colour in GitHub Web .md files
+### Changing Plain Text Colour in GitHub Web .md files
 
-Using LATEX code in Markdown for GitHub Web.
+Currently it is not possible to colour plain text (as in .txt or .md files) for GitHub (many possible reasons for this). Therefore, the _closest_ to a 'fix' for this problem at present might be using LATEX code to color text in Markdown for GitHub Web. This actually inserts an image, rather than colouring the text.
 
 ${\color{red}Red text here}$
 
@@ -272,6 +274,11 @@ ${\textsf{\color{lightgreen}Green text here}}$
 ```
 ${\textsf{\color{lightgreen}Green text here}}$
 ```
+
+**NOTE:** 
+
+- The use of the above code **DOES NOT** colour _plain text_, on GitHub web this displays as an image, as the syntax is intended for inserting maths equations
+- If having issues in future with images, the above LATEX syntax might be the cause, apparent previous issues have come up, be wary.
 
 ### Change Font Family of Section of Text
 
